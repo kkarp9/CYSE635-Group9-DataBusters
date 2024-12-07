@@ -10,7 +10,7 @@ This repo consists of the CYSE 635 AI Security and Privacy course project coveri
 3.  Data Poisoning Attacks
 4.  Comparitive Analyis of two models being used: Random Forest Classifier and Support Vector Machine
 
-![Group9-Model](img/Group9-Workflow.png
+![Group9-Model](img/Group9-Workflow.png)
 
 
 ## Data Poisoning Attacks
