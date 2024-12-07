@@ -1,14 +1,18 @@
 # CYSE635-Group7-DataBusters
-**Authors: Macky Castro and Kurt Karpin**
+Authors:
+- Macky Castro - mcast022@odu.edu
+- Kurt Karpin - kkarp003@odu.edu
 
 ## Introduction
+From an attacker’s point of view, this Data Poisoning experiment on phishing emails is designed to obstruct the email system on identifying whether or not emails are considered as safe or phishing. This would provide an AI Developer’s point of view of how secured their AI models should be from any sort of malicious attack like phishing, one of the most popular and applicable types of attack. This experiment involves attacking a dataset of email by manipulating them to be misclassified. This would assume that the attacker would have access to the dataset meaning they would be capable of incorporating any method of data poisoning on the emails that would cause a trigger for misclassification.
 
 This repo consists of the CYSE 635 AI Security and Privacy course project covering the topic of Data Poisoning on datasets like phishing email. This process is split up into three parts:
 
 1.  Email Dataset Setup and Preprocessing
 2.  Initial Model Training and Analysis
 3.  Data Poisoning Attacks
-4.  Comparitive Analyis of two models being used: Random Forest Classifier and Support Vector Machine
+
+This would also include a comparitive nalyis of two models being used: Random Forest Classifier and Support Vector Machine.
 
 ![Group9-Model](img/Group9-Diagram-Workflow.png)
 
