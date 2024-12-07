@@ -1,4 +1,4 @@
-# CYSE635-Group7-DataBusters
+# CYSE635 Group 9 Data Busters - Not Demure, Not Mindful Project: Data Poisoning on Phishing Emails
 Authors:
 - Macky Castro - mcast022@odu.edu
 - Kurt Karpin - kkarp003@odu.edu
@@ -16,12 +16,18 @@ This would also include a comparitive nalyis of two models being used: Random Fo
 
 ![Group9-Model](img/Group9-Diagram-Workflow.png)
 
+## Dataset Description
+- Source: Kaggle Phishing Email Detection Datset
+- Feature: Text Email
+- Labels: "Safe Email" or "Phishing Email"
+- Size: 18.65K Rows
+- Kaggle Link: https://www.kaggle.com/datasets/subhajournal/phishingemails
 
 ## Data Poisoning Attacks
 Two approaches were conducted on attacking an email dataset.
 
 - Approach 1: Conventional Data Poison method - inserting data poisoned row. This inserts duplicate rows of the dataset and flipping the labels. Up to twice the amount of training data were duplicated with flipped labels. Because the dataset contains more than $18k rows of email content, this process would take a collective of 1 1/2 hours to train both models with as much as twice the original training data being added.
-- Approach 2: Keyword changing - this is more of a precise data poisoning attack method, where keywords of the email was taken and manipulated by swapping them over to the oppsite of the gender. For example, the word 'money' is the most common used word amongst phishing emails. We would apply this to critical spots in the safe email dataset for the desired goal of having the model misclassify the emails. 
+- Approach 2: Keyword changing - this is more of a precise data poisoning attack method, where keywords of the email was taken and manipulated by swapping them over to the oppsite of the gender. For example, the word 'money' is the most common used word amongst phishing emails. We would apply this to critical spots in the safe email dataset for the desired goal of having the model misclassify the emails. This process would run quicker than Approach 1 since the attack only involves working with the current training dataset rather than inserting new ones. This would result in an approximation of 10 minutes to conduct the poisoning and training of the two poisoned models.
 
 ## Setting up to Run Project
 This Jupyter notebook file provided is able to run in Google Collab and also locally as long as Python, pip, and the following libraries are installed:
